@@ -4,39 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script  type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
+    <nav class="navbar navbar-light bg-light">
+        <a href="#">Notatnik</a>
+    </nav>
+    
     <form>
-        Tytuł: <input type="text" id="title"> <br>
-        Treść: <textarea id="content"></textarea> <br>
-        <button id="newNote">Dodaj</button>
+        <label for="title">Tytuł: </label>
+        <input type="text" class="form-control" id="title"> <br>
+        <label for="content">Tytuł: </label> 
+        <textarea id="content" class="form-control"></textarea> <br>
+        <button id="newNote" class="btn btn-info">Dodaj</button>
        
     </form> 
         <main>
             
         </main>
-        <script type="text/javascript">
-        let btnSubmit = document.querySelector('#newNote')
-        btnSubmit.addEventListener('click', function (e){
-            console.log(e)
-            e.preventDefault()
-            
-            // pobierz tytuł i treść z formularza
-            let title = document.querySelector('#title').value
-            let content = document.querySelector('#content').value
-            // utwórz div z notatką
-            let newNote = document.createElement('div')
-            
-            // wepchnij do div tytuł i treść
-            newNote.innerHTML = `<h2>${title}</h2>
-                                <section>${content}</section>` 
-            // dołącz notatkę do main
-
-            let notesContainer = document.querySelector('main')
-            notesContainer.appendChild(newNote)
-        } )
         
-        </script>
+       
+        
+        
+        
 </body>
 </html>

@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    background: #eee;
+}
+.note {
+background: rgb(223, 223, 35);
+margin: 20px;
+padding: 20px;
+width: 200px;
+}
+
+body{
+background: #ccc;
+}
+
